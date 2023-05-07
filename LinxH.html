@@ -1,0 +1,342 @@
+  <!DOCTYPE html>
+<html lang="en">
+       <head>
+       	<meta charser="USF-8">
+       	<title>LinxH</title>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+       </head>
+         <body style="justify-content: center;  background-color: rgb(27, 24, 24);" id="body" onload="choose3()">
+              <nav class="navbar navbar-expand-lg bg-light">
+                     <div class="container-fluid">
+                       <a class="navbar-brand" href="#" style="color: green;">Linx<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-h-square-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm9 4.002V12H9.67V8.455H6.33V12H5V4.002h1.33v3.322h3.34V4.002H11Z"/>
+                      </svg></a><a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                     Questions?
+                   </a>
+                       <button class="btn btn-primary me-md-2" type="button"onclick="choose1()">Costumize LinxH</button>
+              
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                           <li class="nav-item">
+                             <a class="nav-link active" aria-current="page" href="#home">home</a>
+                           </li><!--
+                           <li class="nav-item">
+                             <a class="nav-link" href="#">Link</a>
+                           </li>
+                           <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               Dropdown
+                             </a>
+                             <ul class="dropdown-menu">
+                               <li><a class="dropdown-item" href="#">Action</a></li>
+                               <li><a class="dropdown-item" href="#">Another action</a></li>
+                               <li><hr class="dropdown-divider"></li>
+                               <li><a class="dropdown-item" href="#">Something else here</a></li>
+                             </ul>
+                           </li>
+                           <li class="nav-item">
+                             <a class="nav-link disabled">Disabled</a>
+                           </li>
+                         </ul>
+                         
+                         <form class="d-flex" role="search">
+                           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                           <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-h-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Zm9 4.002V12H9.67V8.455H6.33V12H5V4.002h1.33v3.322h3.34V4.002H11Z"/>
+                          </svg>Search</button>
+                         </form>
+                       </div>
+                     </div>--> 
+
+                   </nav>
+       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              
+            </div>
+             <div id="suma" style="margin-top:-140px;">
+
+             <div style="margin-top:150px; justify-content: center; margin-left: 200px;">
+             
+             
+                
+                   
+                   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                     <div class="offcanvas-header">
+                       <h5 class="offcanvas-title" id="offcanvasExampleLabel">Qestions? Meet the owner</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                     </div>
+                     <div class="offcanvas-body">
+                       <div>
+                        This website allows users to buy/sell accounts of different games. since finding trusted people for this trades, I decided to create
+                        website where eveyone will be able to get what they are seeking for: "simple and safe" method.
+                        you will be in list of buyers or sellers and whenever anyone decides to buy/sell what you want, you will be notifed,
+                        if you dont respond within 1 day trade will be canceled. process will have mm (middle man) who will inspect
+                        everything and make sure everyone gets what they want. for this service you will have to pay tax. tax is 5% of income
+                        for seller and 3% of what buyer paid to seller.
+
+                         website is still beta, please report any bugs to owner.
+                         by clicking button below you will go to website that doesnt belong to us, thats only way to contact owner right now. we are very sorry for this.
+                       </div>
+                       <div class="dropdown mt-3">
+                        <button onclick = "window.location.href='https:/discord.gg/VqEzQS4xsV';" class="btn btn-secondary" type="button">
+                           Take me to the owner!
+                         </button>
+                         
+                       </div>
+                     </div>
+                   </div>
+             </div>
+
+             <br>
+
+             <br>
+
+<div class="container" style=" width: 300px; height: 300px; display: none;
+border: solid gray; border-radius:  30px; margin-top: 40px; margin-left: 500px;" id="fordivs" >
+
+<button style=" margin-left: 20px; width: 100px; height: 100px; border: 50px; border-radius: 25px;
+background-color: blue; cursor: pointer; color: white; size: 5pt;" id="bl" onclick="colors()">BLUE</button>
+
+<button style=" margin-left: 20px; width: 100px; height: 100px; border: 50px; border-radius: 25px;
+background-color: rgb(255, 0, 0); cursor: pointer; color: white; size: 5pt;" id="rd" onclick="colors2()">RED</button>
+
+<br>
+
+<br>
+
+<button style=" margin-left: 20px; width: 100px; height: 100px; border: 50px; border-radius: 25px;
+background-color: darkgreen; cursor: pointer; color: white; size: 5pt;" id="gr" onclick="colors3()">GREEN</button>
+
+<button style=" margin-left: 20px; width: 100px; height: 100px; border: 50px; border-radius: 25px;
+background-color: rgb(255, 0, 179); cursor: pointer; color: white; size: 5pt;" id="pn" onclick="colors4()">PINK</button>
+
+
+
+
+<br>
+
+
+       
+       <button type="button" class="btn btn-outline-light" onclick="choose2()" style="border-radius:15px;
+       margin-left: 214px;">return</button>
+</div>
+              <div id="sdiv" style=" justify-content: center;
+              display: none; text-align: center;   
+               border-radius: 2px; color: aqua;"  >
+
+ 
+              </div>
+<div style="width: 700px;  margin-left: 330px; color: cyan;">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="channels4_profile.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="background-color: rgb(0, 211, 46);">Roblox</h5>
+                    <p  style="background-color: rgb(0, 211, 46);"><strong> Join millions of other players in thousands of games</strong></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="dow.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="background-color: rgb(0, 211, 46);">Brawl Stars</h5>
+                    <p style="background-color: rgb(0, 211, 46);"><strong> Play as different characters, win solo,duo and team challanges </strong></p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="2015398.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 style="background-color: rgb(0, 211, 46);">Standoff 2</h5>
+                    <p style="background-color: rgb(0, 211, 46);"><strong> Fight for Victory As Terrorist or Counter-Terrorist</strong></p>
+                  </div>
+                </div>
+              </div>
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div> 
+</div>
+             
+             </div>
+   
+     
+
+                   <br>
+
+                   <div class="card-group">
+                    <div class="card">
+                      <img src="channels4_profile.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buy/Sell <strong>Roblox</strong> accounts</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                        <button onclick = "window.location.href='https:/discord.gg/CtFbq2wCZn';" type="button" class="btn btn-outline-primary">take me to the store</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="dow.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buy/Sell <strong>Brawl Stars</strong> accounts</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                        <button onclick = "window.location.href='https:/discord.gg/fcU3gDbeAJ';" type="button" class="btn btn-outline-primary">take me to the store</button>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="2015398.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Buy/Sell <strong>Standoff 2</strong> accounts</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                        <button  onclick = "window.location.href='https:/discord.gg/tRNeRj88dV';"  type="button" class="btn btn-outline-primary">take me to the store</button>
+                      </div>
+                    </div>
+                  </div>
+
+                   <hr>
+<br>
+       <div id="susula"  style="border:3px solid rgb(82, 81, 81) ; border-radius:2px; ">
+<div class="accordion" id="accordionExample">
+                     <div class="accordion-item">
+                       <h2 class="accordion-header" id="headingOne">
+                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Roblox 
+                         </button>
+                       </h2>
+                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                         <div class="accordion-body">
+                           <strong>Roblox</strong> allows players to buy, sell, and create virtual items which can be used to decorate their virtual character that serves as their avatar on the platform. By help of this website you will be able to buy and sell Roblox accounts.
+                         </div>
+                       </div>
+                     </div>
+                     <div class="accordion-item">
+                       <h2 class="accordion-header" id="headingTwo">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           Brawl Stars 
+                         </button>
+                       </h2>
+                       <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                         <div class="accordion-body">
+                           <strong>Brawl stars</strong> In Brawl Stars, players battle against other players or AI opponents in multiple game modes. Players can choose between characters called Brawlers that they have unlocked through Boxes, the Brawl Pass, the Trophy Road, or purchased through the Shop to use in battles. By help of this website you will be able to buy and sell Brawl Stars accounts.
+                         </div>
+                       </div>
+                     </div>
+                     <div class="accordion-item">
+                       <h2 class="accordion-header" id="headingThree">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Standoff 2 
+                         </button>
+                       </h2>
+                       <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                         <div class="accordion-body">
+                           <strong>Standoff 2</strong> Standoff 2 is a dynamic first-person shooter that honors its prequel's legacy. Join 200 million other players from across the world - grab your favorite gun and join the standoff! Take part in a real-time team standoff on your smartphone. 120fps support ensures a seamless gameplay experience.By help of this website you will be able to buy and sell Standoff 2 accounts.
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+
+       </div>
+                   
+
+ 
+</body>
+<script>
+       var button_no1;
+var button_no2;
+var button_no3;
+var button_no4;
+var div1;
+var div2;
+var div3;
+var div4;
+var body;
+var co;
+function choose1(){
+       choose4();
+    button_no1=document.getElementById("fordivs");
+    
+    
+    button_no1.style.display="block";
+    
+}
+
+function choose2(){
+       
+    button_no1=document.getElementById("fordivs");
+   
+    
+    
+    button_no1.style.display="none";
+}
+
+function choose3(){
+       choose2();
+    button_no3=document.getElementById("sdiv");
+   
+    
+    
+    button_no3.style.display="block";
+}
+
+
+function choose4(){
+    button_no4=document.getElementById("sdiv");
+   
+    
+    
+    button_no4.style.display="none";
+}
+
+function colors(){
+div1=document.getElementById("bl")
+
+body=document.getElementById("body");
+
+body.style.background="blue";
+
+}
+
+function colors2(){
+   
+    div2=document.getElementById("rd");
+   
+    body=document.getElementById("body");
+    
+    body.style.background="red";
+    
+    }
+
+    function colors3(){
+        
+        div3=document.getElementById("gr");
+   
+        body=document.getElementById("body");
+        
+        body.style.background="darkgreen";
+    }
+
+
+        function colors4(){
+       
+            div4=document.getElementById("pn");
+            body=document.getElementById("body");
+            
+            body.style.background="magenta";
+            
+            }
+</script>
+</html>
