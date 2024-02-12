@@ -82,12 +82,19 @@
       transform: rotate(-45deg) scale(0.6);
     }
   }
+  .glow {
+    animation: glowAnimation 1s ease-in-out infinite alternate;
+  }
+  @keyframes glowAnimation {
+    0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+    100% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000; }
+  }
 </style>
 </head>
 <body>
 <div class="container" id="mainContent">
   <h1>Will you be my Valentine?</h1>
-  <button id="yesButton" onclick="showImage()">Yes</button>
+  <button id="yesButton" onclick="showLove()">Yes</button>
   <button id="noButton" onclick="handleNoClick()">No</button>
   <img src="dow.jpg" id="valentineImage">
   <div id="noText"></div>
@@ -113,11 +120,24 @@
     }
   }
 
-  function showImage() {
-    const mainContent = document.getElementById('mainContent');
-    const valentineImage = document.getElementById('valentineImage');
-    mainContent.style.display = 'none';
-    valentineImage.style.display = 'block';
+  function showLove() {
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ff0000; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #00ff00; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #0000ff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ffff00; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ff00ff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #00ffff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ffffff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #000000; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
+    
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ff0000; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #00ff00; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #0000ff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ffff00; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ff00ff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #00ffff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ffffff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
+    document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #000000; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">Thanks</div>');
   }
 
   function handleNoClick() {
@@ -142,16 +162,6 @@
     button.style.transform = 'scale(1.5)';
   }
 </script>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
-<div class="heart"></div>
 </body>
 </html>
 
