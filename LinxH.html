@@ -121,6 +121,7 @@
   }
 
   function showLove() {
+    document.getElementById('noButton').style.display = 'none'; // Hide the "No" button
     document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #ff0000; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
     document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #00ff00; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
     document.body.insertAdjacentHTML('beforeend', '<div class="glow" style="color: #0000ff; position: absolute; top: ' + (Math.random() * window.innerHeight) + 'px; left: ' + (Math.random() * window.innerWidth) + 'px;">I Love You</div>');
@@ -164,5 +165,3 @@
 </script>
 </body>
 </html>
-
-
